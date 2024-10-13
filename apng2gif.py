@@ -8,8 +8,8 @@ from loguru import logger
 
 def _args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i", "--input-dir", type=Path, default="apng_images", help="input apng file")
-    parser.add_argument("-o", "--output-dir", type=Path, default="gif_images", help="output gif file")
+    parser.add_argument("-i", "--input-dir", type=Path, default="apng_images", help="input apng directory")
+    parser.add_argument("-o", "--output-dir", type=Path, default="gif_images", help="output gif directory")
     return parser.parse_args()
 
 
